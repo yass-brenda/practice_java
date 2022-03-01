@@ -4,7 +4,7 @@
  * Description: Sum of integers used Scanner
  * */
 
-package com.company.paquete;
+package com.company.data_types;
 import java.util.Scanner;
 
 

@@ -1,4 +1,4 @@
-package com.company.paquete;
+package com.company.data_types;
 
 public class Asignation_Declaration {
     public static void main(String args[]){

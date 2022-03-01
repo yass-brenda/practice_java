@@ -1,4 +1,4 @@
-package com.company.paquete;
+package com.company.data_types;
 import javax.swing.*;
 
 public class Input_Output1 {

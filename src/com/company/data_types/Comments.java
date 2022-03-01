@@ -4,7 +4,7 @@
  * Description: Used the method System.out for print the text string.
  * */
 
-package com.company.paquete;
+package com.company.data_types;
 
 public class Comments {
 

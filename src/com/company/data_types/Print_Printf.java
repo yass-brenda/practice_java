@@ -5,7 +5,7 @@
  * */
 
 
-package com.company.paquete;
+package com.company.data_types;
 
 public class Print_Printf {
     public static void main(String args[]){

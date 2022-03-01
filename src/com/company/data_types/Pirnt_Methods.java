@@ -4,7 +4,7 @@
  * Description: Used methods for print.
  * */
 
-package com.company.paquete;
+package com.company.data_types;
 
 
 public class Pirnt_Methods {
