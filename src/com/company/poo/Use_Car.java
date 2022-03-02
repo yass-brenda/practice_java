@@ -7,9 +7,6 @@ public class Use_Car {
         // Instancia de clase , ejemplar de clase
         Car car = new Car();
 
-        // Do not encapsulation
-        car.wheel = 2;
-
-        System.out.println("The wheels are: " + car.wheel);
+        System.out.println(car.say_height());
     }
 }
