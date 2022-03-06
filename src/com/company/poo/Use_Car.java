@@ -1,7 +1,5 @@
 package com.company.poo;
-
-import java.sql.SQLOutput;
-
+import
 public class Use_Car {
     public static void main(String[] args){
         // Create an objetc
@@ -9,9 +7,14 @@ public class Use_Car {
         // Instancia de clase , ejemplar de clase
         Car car = new Car();
 
-        car.set_color();
+        car.establece_color("Blue");
+        System.out.println(car.say_data_general());
 
-        System.out.println(car.get_color());
-        System.out.println(car.say_height());
+        car.configure_leather_seats("no");
+        System.out.println(car.say_leather_seats());
+        car.configureAirCondition("si");
+        System.out.println(car.getterAirCondition());
+        System.out.println(car.sayWeightPlataform());
+        System.out.println("The final price is:" + car.priceCar());
     }
 }
