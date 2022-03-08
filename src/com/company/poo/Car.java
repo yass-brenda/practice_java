@@ -39,7 +39,7 @@ public class Car {
 
     public void configure_leather_seats(String leather_seats){ //SETTER
         // Si no lleva el this se refiere al argumento  si lleva this se refiere ala clase
-        if (leather_seats == "si"){
+        if (leather_seats.equalsIgnoreCase("si")){
             this.leatherSeats = true;
         }else{
             this.leatherSeats = false;
@@ -56,7 +56,7 @@ public class Car {
     }
 
     public void configureAirCondition(String airCondition){ // setter
-        if (airCondition == "si"){
+        if (airCondition.equalsIgnoreCase("si")){
             this.airCondition = true;
         } else {
             this.airCondition = false;
