@@ -4,6 +4,10 @@ public class BookScore {
 
     private String nameCourse;
 
+    public BookScore(String name){
+        nameCourse = name;
+    }
+
     public void printMessage(){
         System.out.printf("Welcome the book score for \n%s!\n",nameCourse);
     }

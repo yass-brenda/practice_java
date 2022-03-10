@@ -6,7 +6,8 @@ public class TestBookScore {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
-        BookScore bookScore = new BookScore();
+        BookScore bookScore = new BookScore("Programación");
+        bookScore.printMessage();
 
         System.out.printf("Writte the name of course is: %s\n\n", bookScore.getNameCourse());
 
