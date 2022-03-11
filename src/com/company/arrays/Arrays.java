@@ -1,4 +1,4 @@
-package com.company.data_types;
+package com.company.arrays;
 
 public class Arrays {
     public static void main(String[] args){
