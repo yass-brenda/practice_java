@@ -15,7 +15,7 @@ public class TestBill {
 
         System.out.print("Writting the amout to deposit for bill2 ");
         amountCredit = sc.nextDouble();
-        System.out.printf("\nsumando %.2f al saldo de cuenta1 \n\n",amountCredit);
+        System.out.printf("\nsumando %.2f al saldo de cuenta1 \nPrcaticing \n",amountCredit);
         bills2.pay(amountCredit);
 
         System.out.printf("Salary bill1 : $%.2f\n",bills.getSalary());
