@@ -1,4 +1,4 @@
-package com.company.data_types;
+package com.company.cycles;
 
 import java.util.Scanner;
 

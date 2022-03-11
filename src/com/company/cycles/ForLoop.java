@@ -1,16 +1,13 @@
-package com.company.data_types;
+package com.company.cycles;
 
-public class WhileLoop {
+public class ForLoop {
     static boolean isTrueOnLight = false;
-
 
     public static void main(String[] args){
         turnOnOffLight();
 
-        int i = 1;
-        while (isTrueOnLight && i <= 10){
+        for(int i= 1; i<=10; i++){
             printSos();
-            i++;
         }
     }
 
