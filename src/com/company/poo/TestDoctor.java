@@ -1,5 +1,5 @@
 package com.company.poo;
-import static com.company.poo.UIMenu.*;
+import static com.company.poo.UIMenu.*; // Add import for static
 
 import javax.print.Doc;
 
