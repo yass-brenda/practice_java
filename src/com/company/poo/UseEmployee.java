@@ -58,3 +58,20 @@ class Employee {
     private double salaryEmployee;
     private Date highContrat; // No is  data type primitiv
 }
+
+class Jefatura extends Employee{
+    public Jefatura(String nom, double sal,int agno,int month, int day){
+        super(nom,sal,agno,month,day); // Dependiendo de los parametros que pase llamara a un constructor o a otro, buscará .
+    }
+
+    public void setIncentive(double b){
+        incentive = b;
+    }
+
+    public double getSalary(){
+        double salaryBoss = super.getSalary();
+        return salaryBoss + incentive;
+    }
+
+    private double incentive;
+}
