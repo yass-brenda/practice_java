@@ -1,4 +1,4 @@
-package com.company.poo;
+package com.company.poo.bill;
 
 import java.util.Scanner;
 

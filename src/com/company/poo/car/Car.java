@@ -1,4 +1,4 @@
-package com.company.poo;
+package com.company.poo.car;
 
 public class Car {
     // Propierties characteristics of an object

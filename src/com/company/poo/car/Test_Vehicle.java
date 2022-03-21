@@ -1,4 +1,7 @@
-package com.company.poo;
+package com.company.poo.car;
+
+import com.company.poo.car.Car;
+import com.company.poo.car.Furgoneta;
 
 public class Test_Vehicle {
     public static void main(String[] args){

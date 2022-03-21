@@ -1,4 +1,4 @@
-package com.company.poo;
+package com.company.poo.doctor;
 
 public class Doctor {
     static int id = 0; // Autoincrement

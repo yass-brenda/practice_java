@@ -4,6 +4,7 @@ public class IfStatements {
     public static void main(String[] args){
         boolean isBluetoothEnabled = false;
         int fileSended = 3;
+        int caliﬁcacionEstudiante = 6;
 
         if (isBluetoothEnabled){
             fileSended++;
@@ -14,5 +15,7 @@ public class IfStatements {
             System.out.println("Please turn on the Bluetooth for start the transfer");
             System.out.println(fileSended);
         }
+
+        System.out.println( caliﬁcacionEstudiante >= 60 ? "Aprobado" : "Reprobado" );
     }
 }

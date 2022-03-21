@@ -6,11 +6,27 @@ import java.util.*; // for Date
 public class UseEmployee {
     public static void main(String[] args){
 
-        Employee[] myEmployess = new Employee[4]; // Array of one class.
+        Jefatura jefatura = new Jefatura(" Diego Ulisses",120,2020,8,5);
+        jefatura.setIncentive(30.0);
+
+        Employee[] myEmployess = new Employee[6]; // Array of one class.
         myEmployess[0] = new Employee("Ulisses",120,2020,8,5);
         myEmployess[1] = new Employee("Diego",150,2020,8,7);
         myEmployess[2] = new Employee("Barrios",1200,2020,12,5);
         myEmployess[3] = new Employee("Becerra");
+
+        myEmployess[4] = jefatura; //Polimorfismo. Principo de sustitución.
+        myEmployess[5] = new Jefatura(" Gloria",120,2020,8,5);
+
+        double num1 = 7.5;
+        int num2 = (int) num1;
+
+        // Un jefe es un empleado .
+        Jefatura jefaDeploy = (Jefatura)myEmployess[5];
+        jefaDeploy.setIncentive(5000);
+
+        /* Un empleado no es un jefe
+        Jefatura jefeShop = (Jefatura) myEmployess[1]; */
 
         for (Employee e: myEmployess){
             e.setIncreaseSalary(5);
@@ -75,3 +91,4 @@ class Jefatura extends Employee{
 
     private double incentive;
 }
+

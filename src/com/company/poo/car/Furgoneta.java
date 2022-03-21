@@ -1,4 +1,6 @@
-package com.company.poo;
+package com.company.poo.car;
+
+import com.company.poo.car.Car;
 
 public class Furgoneta extends Car {
     private int extraAbiliti;
