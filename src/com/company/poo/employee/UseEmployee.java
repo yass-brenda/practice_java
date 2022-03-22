@@ -1,5 +1,4 @@
-package com.company.poo;
-import javax.swing.plaf.synth.SynthRadioButtonMenuItemUI;
+package com.company.poo.employee;
 import java.util.*; // for Date
 
 
@@ -25,10 +24,12 @@ public class UseEmployee {
         Jefatura jefaDeploy = (Jefatura)myEmployess[5];
         jefaDeploy.setIncentive(5000);
 
+        System.out.println(jefaDeploy.takeDecisions("Shopping more food"));
+
         /* Un empleado no es un jefe
         Jefatura jefeShop = (Jefatura) myEmployess[1]; */
 
-        // Interfaces
+        /* Interfaces
         Employee directorComercial = new Jefatura("Gloria",400,1998,05,02);
         Comparable ejemplo = new Employee("Osvaldo",300,1997,04,01);
 
@@ -38,7 +39,8 @@ public class UseEmployee {
 
         if(ejemplo instanceof Comparable){
             System.out.println("Is of type comparable");
-        }
+        } */
+
 
         for (Employee e: myEmployess){
             e.setIncreaseSalary(5);
@@ -103,7 +105,7 @@ class Employee implements Comparable {
     private static int idNext = 1;
 }
 
-class Jefatura extends Employee{
+class Jefatura extends Employee implements Jefes{
     public Jefatura(String nom, double sal,int agno,int month, int day){
         super(nom,sal,agno,month,day); // Dependiendo de los parametros que pase llamara a un constructor o a otro, buscará .
     }
@@ -118,5 +120,10 @@ class Jefatura extends Employee{
     }
 
     private double incentive;
+
+    @Override
+    public String takeDecisions(String decision) {
+        return "One decision was take"+ decision;
+    }
 }
 
