@@ -6,17 +6,17 @@ import java.util.*; // for Date
 public class UseEmployee {
     public static void main(String[] args){
 
-        Jefatura jefatura = new Jefatura(" Diego Ulisses",120,2020,8,5);
+        Jefatura jefatura = new Jefatura(" Diego Ulisses",4,2020,8,5);
         jefatura.setIncentive(30.0);
 
         Employee[] myEmployess = new Employee[6]; // Array of one class.
-        myEmployess[0] = new Employee("Ulisses",120,2020,8,5);
-        myEmployess[1] = new Employee("Diego",150,2020,8,7);
-        myEmployess[2] = new Employee("Barrios",1200,2020,12,5);
+        myEmployess[0] = new Employee("Ulisses",1,2020,8,5);
+        myEmployess[1] = new Employee("Diego",2,2020,8,7);
+        myEmployess[2] = new Employee("Barrios",3,2020,12,5);
         myEmployess[3] = new Employee("Becerra");
 
         myEmployess[4] = jefatura; //Polimorfismo. Principo de sustitución.
-        myEmployess[5] = new Jefatura(" Gloria",120,2020,8,5);
+        myEmployess[5] = new Jefatura(" Gloria",5,2020,8,5);
 
         double num1 = 7.5;
         int num2 = (int) num1;
@@ -28,9 +28,23 @@ public class UseEmployee {
         /* Un empleado no es un jefe
         Jefatura jefeShop = (Jefatura) myEmployess[1]; */
 
+        // Interfaces
+        Employee directorComercial = new Jefatura("Gloria",400,1998,05,02);
+        Comparable ejemplo = new Employee("Osvaldo",300,1997,04,01);
+
+        if(directorComercial instanceof Employee){
+            System.out.println("Is of type jefatura");
+        }
+
+        if(ejemplo instanceof Comparable){
+            System.out.println("Is of type comparable");
+        }
+
         for (Employee e: myEmployess){
             e.setIncreaseSalary(5);
         }
+
+        Arrays.sort(myEmployess);
 
         for (Employee e: myEmployess){
             System.out.println("Name : " + e.getName() + " Salary : " + e.getSalary() + " Hight contrat: " + e.getDate());
@@ -39,7 +53,7 @@ public class UseEmployee {
     }
 }
 
-class Employee {
+class Employee implements Comparable {
     public Employee(String name,double salary,int year,int month,int day){
         nameEmployee = name;
         salaryEmployee = salary;
@@ -70,9 +84,23 @@ class Employee {
         salaryEmployee+= increase;
     }
 
+    public int compareTo(Object myObject){
+        Employee otherEmploye = (Employee) myObject;
+        if(this.salaryEmployee < otherEmploye.salaryEmployee){
+            return -1;
+        }
+        if(this.salaryEmployee > otherEmploye.salaryEmployee){
+            return 1;
+        }
+
+        return 0;
+    }
+
     private String nameEmployee;
     private double salaryEmployee;
     private Date highContrat; // No is  data type primitiv
+    private int Id;
+    private static int idNext = 1;
 }
 
 class Jefatura extends Employee{
