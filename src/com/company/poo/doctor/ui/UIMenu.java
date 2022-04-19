@@ -1,4 +1,4 @@
-package com.company.poo.doctor;
+package com.company.poo.doctor.ui;
 
 import java.util.Scanner;
 
