@@ -1,6 +1,7 @@
 package com.company.poo.doctor;
 import com.company.poo.doctor.model.Doctor;
 import com.company.poo.doctor.model.Patient;
+import com.company.poo.doctor.model.User;
 
 import java.util.Date;
 
@@ -18,6 +19,7 @@ public class TestDoctor {
             System.out.println(a.getDate() + " " + a.getTime());
         } */
 
+        User user = new Doctor("Ulisses","ule@gmail.com"); // Polimorfismo.
 
         Patient patient= new Patient("Ulisses","ulisses@gmail.com");
         Patient patient2= new Patient("Diego","diego@gmail.com");
