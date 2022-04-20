@@ -5,7 +5,8 @@ import com.company.poo.doctor.model.Doctor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UIDoctorMenu {public static ArrayList<Doctor> doctorsAvailableAppointments = new ArrayList<>();
+public class UIDoctorMenu {
+    public static ArrayList<Doctor> doctorsAvailableAppointments = new ArrayList<>();
 
     public static void showDoctorMenu(){
         int response = 0;

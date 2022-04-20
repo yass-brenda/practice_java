@@ -14,7 +14,7 @@ public class UIPatientMenu {
         do{
             System.out.println("\n\n");
             System.out.println("Patient");
-            System.out.println("Welcome: " + UIMenu.patientLogged);
+            System.out.println("Welcome: " + UIMenu.patientLogged.getName());
 
             System.out.println("1.Book and Appointment");
             System.out.println("2. My Appointments");
@@ -28,6 +28,7 @@ public class UIPatientMenu {
                     showPatientMenu();
                     break;
                 case 2:
+                    showPatientMyAppointments();
                     break;
                 case 0:
                     UIMenu.showMenu();
