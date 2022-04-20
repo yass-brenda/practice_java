@@ -8,7 +8,6 @@ public class pruebas {
         System.out.println(-Math.pow(2,31));
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set();
 
 
     }

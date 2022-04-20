@@ -1,7 +1,5 @@
 package com.company.poo.doctor;
-import com.company.poo.doctor.model.Doctor;
-import com.company.poo.doctor.model.Patient;
-import com.company.poo.doctor.model.User;
+import com.company.poo.doctor.model.*;
 
 import java.util.Date;
 
@@ -20,11 +18,36 @@ public class TestDoctor {
         } */
 
         User user = new Doctor("Ulisses","ule@gmail.com"); // Polimorfismo.
+        user.showDataUser();
 
+        User user2 = new Patient("Gloria","gloria@gmail.com"); // Polimorfismo.
+        user2.showDataUser();
+
+        // Instancia de un metodo acceso anonimo
+        User user3 = new User("Ulisses","ule@gmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital cruz morada");
+                System.out.println("Departamento: Geriatria");
+            }
+        };
+
+        user3.showDataUser();
+        ISchedulable iSchedulable =new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
+        ISchedulable iSchedulable1 = new AppointmentDoctor();
+
+
+        /*
         Patient patient= new Patient("Ulisses","ulisses@gmail.com");
         Patient patient2= new Patient("Diego","diego@gmail.com");
 
-        System.out.println(patient);
+        System.out.println(patient); */
 
 
 
