@@ -26,7 +26,6 @@ public class UIMenu {
 
             switch (response){
                 case 1:
-                    System.out.println("Doctor");
                     response = 0;
                     authUser(1);
                     break;
@@ -64,6 +63,7 @@ public class UIMenu {
                     if(d.getEmail().equals(email)){
                         emailCorrect = true;
                         doctorLogged = d;
+                        UIDoctorMenu.showDoctorMenu();
 
                     }
                 }

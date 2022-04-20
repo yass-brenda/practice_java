@@ -59,8 +59,7 @@ public abstract class User {
 
     @Override
     public String toString() {
-        return "User: " + name + " , Email: " + email +
-                "\nAddress: " + address + ". Phone " + phoneNumber;
+        return "User: " + name;
     }
 
     public abstract void showDataUser();
